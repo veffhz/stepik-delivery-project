@@ -13,7 +13,7 @@ depends_on = None
 def upgrade():
     op.create_table('categories',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('code', sa.String(length=8), nullable=False),
+    sa.Column('code', sa.String(length=15), nullable=False),
     sa.Column('title', sa.String(length=80), nullable=False),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('code'),
