@@ -68,7 +68,7 @@ class Meal(db.Model):
 class Category(db.Model):
     __tablename__ = 'categories'
     id = db.Column(db.Integer, primary_key=True)
-    code = db.Column(db.String(8), unique=True, nullable=False)
+    code = db.Column(db.String(15), unique=True, nullable=False)
     title = db.Column(db.String(80), unique=True, nullable=False)
     meals = db.relationship("Meal", back_populates="category", lazy='joined')
 
