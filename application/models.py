@@ -55,7 +55,7 @@ class Meal(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80), unique=True, nullable=False)
     price = db.Column(db.Integer, nullable=False)
-    description = db.Column(db.String(80), nullable=False)
+    description = db.Column(db.String(200), nullable=False)
     picture = db.Column(db.String(80), nullable=False)
     category_id = db.Column(db.Integer, db.ForeignKey("categories.id"))
     category = db.relationship("Category", back_populates="meals", lazy='joined')
