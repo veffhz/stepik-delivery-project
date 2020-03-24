@@ -1,4 +1,6 @@
-## Delivery service with Flask
+Delivery service with Flask
+==================
+[![Heroku](https://heroku-badge.herokuapp.com/?app=stepik-delivery-project&style=flat)](https://stepik-delivery-project.herokuapp.com)
 
 ##### features:
  - main page for show random 3*5 meals by categories 
